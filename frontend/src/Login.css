@@ -1,0 +1,267 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent the login-container itself from scrolling */
+}
+
+.login-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    color: white;
+    border: 5px solid rgb(10, 192, 238);
+    font-size: 2em;
+    border-radius: 25px;
+    margin: 50px;
+    padding: 3%;
+    max-height: 80vh; /* Limit the height to 80% of the viewport height */
+    overflow-y: auto; /* Add a vertical scroll bar if content overflows */
+}
+
+.login-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    transition: border 0.3s;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"] {
+    padding: 2%;
+    border-radius: 25px;
+}
+
+.login-form button:hover {
+    border: 2px solid #4CAF50;
+}
+
+.login-form p {
+    text-align: center;
+    border-radius: 25px;
+    background-color: rgb(160, 7, 7);
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 600px) {
+    .login-form {
+        font-size: 1em;
+        margin: 20px;
+        padding: 2%;
+    }
+
+    .login-form button {
+        padding: 8px 16px;
+        margin-top: 5px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form input[type="email"] {
+        padding: 1%;
+    }
+
+    .login-form p {
+        font-size: 0.9em;
+    }
+}
+
+/* Media queries for landscape orientation */
+@media (max-width: 800px) and (orientation: landscape) {
+    .login-form {
+        font-size: 1.2em;
+        margin: 10px;
+        padding: 2%;
+    }
+
+    .login-form button {
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form input[type="email"] {
+        padding: 2%;
+    }
+
+    .login-form p {
+        font-size: 1em;
+    }
+}
+
+/* Media queries for very small screens */
+@media (max-width: 400px) {
+    .login-form {
+        font-size: 0.8em;
+        margin: 10px;
+        padding: 2%;
+    }
+
+    .login-form button {
+        padding: 6px 12px;
+        margin-top: 5px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form input[type="email"] {
+        padding: 1%;
+    }
+
+    .login-form p {
+        font-size: 0.8em;
+    }
+}
+
+/* Media queries for large screens in landscape orientation */
+@media (max-width: 1200px) and (orientation: landscape) {
+    .login-form {
+        font-size: 1.5em;
+        margin: 20px;
+        padding: 2.5%;
+    }
+
+    .login-form button {
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form input[type="email"] {
+        padding: 1.5%;
+    }
+
+    .login-form p {
+        font-size: 1.2em;
+    }
+}
+
+/* Media queries for 400px in landscape */
+@media (max-width: 400px) and (orientation: landscape) {
+    .login-form {
+        font-size: 0.7em;
+        margin: 5px;
+        padding: 1.5%;
+    }
+
+    .login-form button {
+        padding: 5px 10px;
+        margin-top: 3px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form input[type="email"] {
+        padding: 0.5%;
+    }
+
+    .login-form p {
+        font-size: 0.7em;
+    }
+}
+
+/* Media queries for 300px in normal */
+@media (max-width: 300px) {
+    .login-form {
+        font-size: 0.6em;
+        margin: 5px;
+        padding: 1%;
+    }
+
+    .login-form button {
+        padding: 4px 8px;
+        margin-top: 2px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form input[type="email"] {
+        padding: 0.4%;
+    }
+
+    .login-form p {
+        font-size: 0.6em;
+    }
+}
+
+/* Media queries for screens between 950px and 1200px */
+@media (min-width: 950px) and (max-width: 1200px) and (orientation: landscape) {
+    .login-form {
+        font-size: 1.7em;
+        margin: 30px;
+        padding: 3%;
+    }
+
+    .login-form button {
+        padding: 12px 24px;
+        margin-top: 15px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form input[type="email"] {
+        padding: 2%;
+    }
+
+    .login-form p {
+        font-size: 1.3em;
+    }
+}
+
+/* Media queries for screens wider than 1200px in landscape */
+@media (min-width: 1200px) and (orientation: landscape) {
+    .login-form {
+        font-size: 2em;
+        margin: 40px;
+        padding: 3.5%;
+    }
+
+    .login-form button {
+        padding: 14px 28px;
+        margin-top: 20px;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form input[type="email"] {
+        padding: 2.5%;
+    }
+
+    .login-form p {
+        font-size: 1.5em;
+    }
+}
+
+/* Media queries for screens wider than 800px */
+@media (min-width: 800px) and (orientation: landscape) {
+    .login-form {
+        font-size: calc(1.5em + (2 - 1.5) * ((100vw - 800px) / (1200 - 800)));
+        margin: calc(20px + (40 - 20) * ((100vw - 800px) / (1200 - 800)));
+        padding: calc(2.5% + (3.5% - 2.5%) * ((100vw - 800px) / (1200 - 800)));
+    }
+
+    .login-form button {
+        padding: calc(10px + (14 - 10) * ((100vw - 800px) / (1200 - 800))) calc(20px + (28 - 20) * ((100vw - 800px) / (1200 - 800)));
+        margin-top: calc(10px + (20 - 10) * ((100vw - 800px) / (1200 - 800)));
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"],
+    .login-form input[type="email"] {
+        padding: calc(1.5% + (2.5% - 1.5%) * ((100vw - 800px) / (1200 - 800)));
+    }
+
+    .login-form p {
+        font-size: calc(1.2em + (1.5 - 1.2) * ((100vw - 800px) / (1200 - 800)));
+    }
+}

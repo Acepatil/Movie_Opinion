@@ -1,0 +1,44 @@
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    color: white;
+    border: 5px solid black; 
+    /* Add border to form */
+    font-size: 2em;
+    border-radius: 100px;
+    margin: 50px;
+    padding: 3%;
+}
+
+.login-form button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Some padding */
+    border: none; /* Remove borders */
+    border-radius: 25px; /* Rounded borders */
+    transition: border 0.3s;
+     /* Add transition effect */
+     cursor: pointer; /* Change cursor to pointer */
+    width: 100%; /* Set a width if needed */
+    margin-top: 10px; /* Add some top margin */
+}
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 2%;
+    border-radius: 25px;
+}
+.login-form button:hover {
+    border: 2px solid #4CAF50; /* Add border on hover */
+}
+    
+

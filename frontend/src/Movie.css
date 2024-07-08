@@ -1,0 +1,59 @@
+/* src/Movie.css */
+
+.movie-container {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Add some space between the movie items */
+  padding: 20px;
+}
+
+.movie-item {
+  flex: 0 1 calc(25% - 20px); /* Adjust the percentage to control the width of each movie item */
+  box-sizing: border-box;
+  text-align: center;
+  padding: 15px;
+  background-color: #0d0000;
+  text-align: center; /* Add some background color for better visibility */
+  text-decoration: aliceblue;
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  color: aliceblue; /* Optional: Add a subtle shadow */
+}
+
+.movie-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px; /* Optional: Add rounded corners to images */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 600px) {
+  .movie-item {
+      flex: 0 1 calc(50% - 20px); /* Adjust the width for smaller screens */
+      padding: 10px;
+  }
+
+  .movie-container {
+      gap: 10px;
+      padding: 10px;
+  }
+
+  .movie-item img {
+      border-radius: 3px; /* Adjust rounded corners for images */
+  }
+}
+
+@media (max-width: 400px) {
+  .movie-item {
+      flex: 0 1 calc(100% - 20px); /* Full width for very small screens */
+      padding: 5px;
+  }
+
+  .movie-container {
+      gap: 5px;
+      padding: 5px;
+  }
+}

@@ -1,0 +1,221 @@
+/* src/MovieInfo.css */
+
+.movie-info-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2%;
+    padding: 5% 5% 2% 5%;
+    background-color: #0d0000;
+    text-align: center;
+    text-decoration: aliceblue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: aliceblue;
+}
+
+.movie-poster {
+    flex-shrink: 1;
+    text-align: center;
+    max-width: 250px;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    max-width: calc(100% - 220px);
+}
+
+.movie-details p {
+    font-size: 1.2em;
+}
+
+.movieSummary {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2%;
+    padding: 1%;
+}
+
+.movieSummary p {
+    font-size: 1.2em;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.comment {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #010e1b;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+    text-align: left;
+}
+
+.comment-form {
+    width: 80%; 
+    margin-bottom: 1.8%;
+}
+
+.green {
+    background-color: rgb(4, 64, 4);
+}
+
+.red {
+    background-color: rgb(61, 3, 3);
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 600px) {
+    .movie-info-item {
+        flex-direction: column;
+        padding: 2%;
+    }
+
+    .movie-poster {
+        max-width: 100%;
+    }
+
+    .movie-details {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .movie-details p {
+        font-size: 1em;
+    }
+
+    .movieSummary {
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .movieSummary p {
+        font-size: 1em;
+    }
+
+    .comment {
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .comment-form {
+        width: 100%;
+    }
+}
+
+/* Media queries for very small screens */
+@media (max-width: 400px) {
+    .movie-details p,
+    .movieSummary p {
+        font-size: 0.9em;
+    }
+
+    .comment {
+        padding: 3px;
+    }
+
+    .comment-form {
+        margin-bottom: 1.2%;
+    }
+}
+
+/* Media queries for larger screens in landscape orientation */
+@media (max-width: 800px) and (orientation: landscape) {
+    .movie-info-item {
+        padding: 3%;
+    }
+
+    .movie-details p,
+    .movieSummary p {
+        font-size: 1.1em;
+    }
+
+    .comment {
+        padding: 8px;
+        margin-bottom: 4px;
+    }
+
+    .comment-form {
+        margin-bottom: 1.5%;
+    }
+}
+
+@media (max-width: 1200px) and (orientation: landscape) {
+    .movie-info-item {
+        padding: 4%;
+    }
+
+    .movie-details p,
+    .movieSummary p {
+        font-size: 1.3em;
+    }
+
+    .comment {
+        padding: 9px;
+        margin-bottom: 4px;
+    }
+
+    .comment-form {
+        margin-bottom: 1.6%;
+    }
+}
+
+/* Media queries for 400px in landscape */
+@media (max-width: 400px) and (orientation: landscape) {
+    .movie-info-item {
+        padding: 2%;
+        flex-direction: column;
+    }
+
+    .movie-poster {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .movie-details {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .movie-details p {
+        font-size: 0.9em;
+    }
+
+    .movieSummary {
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    .movieSummary p {
+        font-size: 0.9em;
+    }
+
+    .comment {
+        flex-direction: column;
+        width: 100%;
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    .comment-form {
+        width: 100%;
+        margin-bottom: 1%;
+    }
+}
