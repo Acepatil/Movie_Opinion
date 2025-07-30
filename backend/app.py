@@ -28,7 +28,11 @@ db = SQLAlchemy(app)
 with open('data.pkl', 'rb') as pickle_file:
     freqs = pickle.load(pickle_file)
 
-model = pickle.load(open('model.pkl', 'rb'))
+# model = pickle.load(open('best_model_random_forest.pkl', 'rb'))
+# Model is neural network, so we load it differently
+from tensorflow import keras
+
+model = keras.models.load_model("best_model_tensorflow_nn.keras")
 
 # Define database models
 class User(db.Model):
