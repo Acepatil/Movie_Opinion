@@ -85,7 +85,7 @@ def parameter_X(X,freqs):
 
 
 
-data=pd.read_csv('server\IMDB_Dataset.csv')
+data=pd.read_csv('backend\IMDB_Dataset.csv')
 X=data["review"]
 y=data["sentiment"]
 change_review(y)
